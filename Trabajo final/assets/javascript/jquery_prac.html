@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang= "es">
+<head>
+<meta charset= "utf-8">
+<title>libros</title>
+</head>
+<body>
+	<p id="primero">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie arcu quis purus eleifend hendrerit vitae id est. Sed convallis nulla at urna consectetur, vel lacinia velit dignissim. Donec urna felis, lobortis nec sagittis id, volutpat vel ligula. Mauris vel commodo lacus, id imperdiet eros.</p>
+	<p class="segundo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie arcu quis purus eleifend hendrerit vitae id est. Sed convallis nulla at urna consectetur, vel lacinia velit dignissim. Donec urna felis, lobortis nec sagittis id, volutpat vel ligula. Mauris vel commodo lacus, id imperdiet eros.</p>
+	<p class="segundo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie arcu quis purus eleifend hendrerit vitae id est. Sed convallis nulla at urna consectetur, vel lacinia velit dignissim. Donec urna felis, lobortis nec sagittis id, volutpat vel ligula. Mauris vel commodo lacus, id imperdiet eros.</p>
+	<p class="segundo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie arcu quis purus eleifend hendrerit vitae id est. Sed convallis nulla at urna consectetur, vel lacinia velit dignissim. Donec urna felis, lobortis nec sagittis id, volutpat vel ligula. Mauris vel commodo lacus, id imperdiet eros.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie arcu quis purus eleifend hendrerit vitae id est. Sed convallis nulla at urna consectetur, vel lacinia velit dignissim. Donec urna felis, lobortis nec sagittis id, volutpat vel ligula. Mauris vel commodo lacus, id imperdiet eros.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie arcu quis purus eleifend hendrerit vitae id est. Sed convallis nulla at urna consectetur, vel lacinia velit dignissim. Donec urna felis, lobortis nec sagittis id, volutpat vel ligula. Mauris vel commodo lacus, id imperdiet eros.</p>
+	<p class="segundo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie arcu quis purus eleifend hendrerit vitae id est. Sed convallis nulla at urna consectetur, vel lacinia velit dignissim. Donec urna felis, lobortis nec sagittis id, volutpat vel ligula. Mauris vel commodo lacus, id imperdiet eros.</p>
+	<em><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie arcu quis purus eleifend hendrerit vitae id est. Sed convallis nulla at urna consectetur, vel lacinia velit dignissim. Donec urna felis, lobortis nec sagittis id, volutpat vel ligula. Mauris vel commodo lacus, id imperdiet eros.</p></em>
+	<p class="tercero">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie arcu quis purus eleifend hendrerit vitae id est. Sed convallis nulla at urna consectetur, vel lacinia velit dignissim. Donec urna felis, lobortis nec sagittis id, volutpat vel ligula. Mauris vel commodo lacus, id imperdiet eros.</p>
+	<p class="tercero">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie arcu quis purus eleifend hendrerit vitae id est. Sed convallis nulla at urna consectetur, vel lacinia velit dignissim. Donec urna felis, lobortis nec sagittis id, volutpat vel ligula. Mauris vel commodo lacus, id imperdiet eros.</p>
+
+<script type="text/javascript"> 
+
+	var dos= document.getElementById("primero");
+	console.info(dos);
+
+	var tres= document.getElementsByTagName("em");
+	console.info(tres);
+
+	var cuatro=document.getElementsByTagName("p");
+
+	for(i=0; i<cuatro.lenght; i++){
+		var e=cuatro.item(i);
+		cuatro.style.color="blue";
+
+		if(e.getAttribute("id")== "un_id"){
+			continue; 
+		}
+	}
+
+	console.info(cuatro);
+
+	var cinco= document.getElementsByClassName("segundo");
+	console.info(cinco);
+
+	var seis= document.getElementsByClassName("cuatro");
+	console.info(seis);
+
+</script>
+
+</body>
+</html>
